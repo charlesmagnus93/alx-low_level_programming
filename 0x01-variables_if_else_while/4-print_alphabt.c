@@ -7,6 +7,7 @@
 int main(void)
 {
 	char alpha;
+	char a = '\n';
 
 	for (alpha = 'a'; alpha <= 'z'; ++alpha)
 	{
@@ -14,5 +15,6 @@ int main(void)
 			continue;
 		putchar(alpha);
 	}
+	putchar(a);
 	return (0);
 }
