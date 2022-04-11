@@ -6,29 +6,29 @@
 
 int main(void)
 {
-        int num;
-        int b;
+	int num;
+	int b;
 
-        for (num = 48; num <= 57; num++)
-        {
-                for (b = 49; b <= 57; b++)
-                {
-                        if (num >= b)
-                        {
-                                continue;
-                        } else
-                        {
-                                putchar(num);
-                                putchar(b);
-                                if (num == 56 && b == 57)
-                                {
-                                        continue;
-                                }
-                                putchar(',');
-                                putchar(' ');
-                        }
-                }
-        }
-        putchar('\n');
-        return (0);
+	for (num = 48; num <= 57; num++)
+	{
+		for (b = 49; b <= 57; b++)
+		{
+			if (num >= b)
+			{
+				continue;
+			}
+			else {
+				putchar(num);
+				putchar(b);
+				if (num == 56 && b == 57)
+				{
+					continue;
+				}
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
 }
