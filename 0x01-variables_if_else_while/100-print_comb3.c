@@ -17,7 +17,8 @@ int main(void)
 			{
 				continue;
 			}
-			else {
+			else
+			{
 				putchar(num);
 				putchar(b);
 				if (num == 56 && b == 57)
