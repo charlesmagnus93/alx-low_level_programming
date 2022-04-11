@@ -1,25 +1,31 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
-* main - print size of various types
-* Return: the 0 (Success)
-*/
+ * main - print comb
+ * Return: 0 (Success)
+ */
 
 int main(void)
 {
-	int num;
-	int b;
+        int num;
+        int b;
 
-	for (num = 49; num <= 57; num++)
-	{
-		for (b = 48; b < num; b++)
-		{
-			if (num != 49)
-				putchar(',');
-			putchar(b);
-			putchar(num);
-			putchar(' ');
-		}
-	}
-	putchar('\n');
-	return (0);
+        for (num = 48; num <= 57; numm++)
+        {
+                for (b = 49; b <= 57; b++)
+                {
+                        if ((num == b) || (num >= b))
+                        {
+                                continue;
+                        }
+                        if ((num != b) || (num >= b))
+                        {
+                                putchar(num);
+                                putchar(b);
+                                putchar(',');
+                                putchar(' ');
+                        }
+                }
+        }
+        putchar('\n');
+        return (0);
 }
