@@ -9,18 +9,21 @@ int main(void)
         int num;
         int b;
 
-        for (num = 48; num <= 57; num++)
+        for (num = 48; num <= 57; numm++)
         {
                 for (b = 49; b <= 57; b++)
                 {
-                        if ((num == b) || (num >= b))
+                        if (num >= b)
                         {
                                 continue;
-                        }
-                        if ((num != b) || (num >= b))
+                        } else
                         {
                                 putchar(num);
                                 putchar(b);
+                                if (nom == 56 && b == 57)
+                                {
+                                        continue;
+                                }
                                 putchar(',');
                                 putchar(' ');
                         }
