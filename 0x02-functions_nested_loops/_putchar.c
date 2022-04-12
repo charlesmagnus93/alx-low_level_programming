@@ -1,12 +1,6 @@
 #include <stdio.h>
 
-void _putchar(void)
+void _putchar(int i)
 {
-	char c;
-
-	for (c = 97; c <= 122; c++)
-	{
-		putchar(c);
-	}
-	putchar('\n');
+	putchar(i);
 }
