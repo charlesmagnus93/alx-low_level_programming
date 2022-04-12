@@ -2,5 +2,11 @@
 
 void _putchar(void)
 {
-	printf("abcdefghijklmnopqrstuvwxyz\n");
+	char c;
+
+	for (c = 97; c <= 122; c++)
+	{
+		putchar(c);
+	}
+	putchar('\n');
 }
