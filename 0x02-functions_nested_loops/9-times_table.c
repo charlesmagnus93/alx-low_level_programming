@@ -1,6 +1,6 @@
 #include "_putchar.h"
 /**
- * times_table + Prints the 9 times tables
+ * times_table - Prints the 9 times tables
  *
  */
 /* the time table */
