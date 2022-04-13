@@ -4,12 +4,12 @@
  * print_to_98 - Print all natural numbers from n to 98
  * @n: the begin number
  */
-void print_to_98(void)
+void print_to_98(int n)
 {
 	if (n >= 98)
 	{
 		while (n > 98)
-			printf("%d, ", ,--);
+			printf("%d, ", n--);
 		print("%d\n", n);
 	}
 	else
