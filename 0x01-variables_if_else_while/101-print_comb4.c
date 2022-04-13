@@ -1,39 +1,34 @@
 #include <stdio.h>
-/**
- * main - print comb
- * Return: 0 (Success)
- */
 
+/**
+ * main - Prints all possible combinations of three different digits
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-	int num;
-	int a;
-	int b;
+	int digit1, digit2, digit3;
 
-	for (num = 48; num <= 57; num++)
+	for (digit1 = 0; digit1 < 8; digit1++)
 	{
-		for (b = 49; b <= 57; b++)
+		for (digit2 = digit1 + 1; digit2 < 9; digit2++)
 		{
-			for (a = 49; a <= 57; a++)
+			for (digit3 = digit2 + 1; digit3 < 10; digit3++)
 			{
-				if (num >= a || num >= b)
-				{
+				putchar((digit1 % 10) + '0');
+				putchar((digit2 % 10) + '0');
+				putchar((digit3 % 10) + '0');
+
+				if (digit1 == 7 && digit2 == 8 && digit3 == 9)
 					continue;
-				} else
-				{
-					putchar(num);
-					putchar(a);
-					putchar(b);
-					if ((num == 56 && b == 57) || (num == 56 && a == 57))
-					{
-						continue;
-					}
-					putchar(',');
-					putchar(' ');
-				}
+
+				putchar(',');
+				putchar(' ');
 			}
-			}
+		}
 	}
+
 	putchar('\n');
+
 	return (0);
 }
