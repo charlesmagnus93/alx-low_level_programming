@@ -1,10 +1,11 @@
 #include <ctype.h>
-/*
- * _islower - Function that putchar is lower.
- * @c: int value to check.
+/**
+ * _islower - Verify if value is lower or not
+ * @c: value to verify
  *
- * Return: 1 or 0 .
+ * Return: 1 if lower else 0.
  */
+/* veryfy islower */
 int _islower(int c)
 {
 	if (islower(c))
