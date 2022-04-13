@@ -8,8 +8,6 @@
 /* verify if greater or less */
 int print_sign(int n)
 {
-	int r;
-
 	if (n > 0)
 	{
 		return (+1);
@@ -24,5 +22,5 @@ int print_sign(int n)
 	{
 		return (0);
 		printf("0");
-	}
+	};
 }
