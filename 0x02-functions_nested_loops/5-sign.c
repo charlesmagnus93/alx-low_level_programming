@@ -17,13 +17,13 @@ int print_sign(int n)
 	};
 	if (n < 0)
 	{
-		printf("0");
-		r = 0;
+		printf("-");
+		r = -1;
 	};
 	if (n == 0)
 	{
-		printf("-");
-		r = -1;
+		printf("0");
+		r = 0;
 	}
 	return (r);
 }
