@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "_putchar.h"
 /**
  * print_sign - Verify if number is greater or less
  * @n: value to verify
