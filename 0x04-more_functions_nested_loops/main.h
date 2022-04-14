@@ -6,3 +6,4 @@
 #include "4-print_most_numbers.h"
 #include "5-more_numbers.h"
 #include "6-print_line.h"
+#include "7-print_diagonal.h
