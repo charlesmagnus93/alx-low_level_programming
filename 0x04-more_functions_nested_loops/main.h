@@ -1,3 +1,5 @@
+#include "_putchar.h"
 #include "0-isupper.h"
 #include "1-isdigit.h"
 #include "2-mul.h"
+#include "3-print_numbers.h"
