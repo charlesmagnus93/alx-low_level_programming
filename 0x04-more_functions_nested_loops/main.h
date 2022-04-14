@@ -8,3 +8,4 @@
 #include "6-print_line.h"
 #include "7-print_diagonal.h"
 #include "8-print_square.h"
+#include "10-print_triangle.h"
