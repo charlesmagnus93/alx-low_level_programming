@@ -5,3 +5,4 @@
 #include "3-print_numbers.h"
 #include "4-print_most_numbers.h"
 #include "5-more_numbers.h"
+#include "6-print_line.h"
