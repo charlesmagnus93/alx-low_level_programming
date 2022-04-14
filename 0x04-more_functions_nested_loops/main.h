@@ -7,3 +7,4 @@
 #include "5-more_numbers.h"
 #include "6-print_line.h"
 #include "7-print_diagonal.h"
+#include "8-print_square.h"
