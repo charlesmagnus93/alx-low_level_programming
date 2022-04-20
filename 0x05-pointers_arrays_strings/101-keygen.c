@@ -14,19 +14,19 @@ int main(void)
 	int ascii = 2772;
 	int i = 0;
 	int j, random;
-	char pwd[100];
+	char password[100];
 	time_t t;
 
 	srand((int) time(&t));
 	while (ascii > 126)
 	{
 		random = rand() % 126;
-		pwd[i] = random;
+		password[i] = random;
 		ascii -= random;
 		i++;
 	}
 	if (ascii > 0)
-		pwd[i] = ascii;
+		password[i] = ascii;
 	else
 	{
 		i--;
@@ -34,7 +34,7 @@ int main(void)
 
 	for (j = 0; j <= i; j++)
 	{
-		printf("%c", pwd[j]);
+		printf("%c", password[j]);
 	}
 	return (0);
 }
