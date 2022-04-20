@@ -12,8 +12,8 @@
 int main(void)
 {
 	int ascii = 2772;
-    int i = 0;
-    int j, random;
+	int i = 0;
+	int j, random;
 	char pwd[100];
 	time_t t;
 
