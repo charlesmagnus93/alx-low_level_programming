@@ -11,12 +11,12 @@ char *cap_string(char *str)
 	int i = 1, j, check;
 	char a[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', '\n', '\t', ' '};
 
-	if (str[0] > 96 && str[0] < 123)
+	if (str[0] > 'a' && str[0] < 'z')
 		str[0] -= 32;
 
 	while (str[i] != '\0')
 	{
-		if (str[i] > 96 && str[i] < 123)
+		if (str[i] > 'a' && str[i] < 'z')
 		{
 			j = 0;
 			check = 0;
