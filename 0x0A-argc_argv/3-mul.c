@@ -8,20 +8,20 @@
  * @argv: array of command lin arguments
  * Return: 0
  */
-
 int main(int argc, char *argv[])
 {
-	int res;
+	int n, ex;
 
-	if (argc > 1)
+	ex = 0;
+	if (argc != 3)
 	{
-		res = atoi(argv[1]) * atoi(argv[2]);
-		printf("%d\n", res);
+		printf("%s\n", "Error");
+		ex = 1;
 	}
 	else
 	{
-		printf("Error\n");
-		res = 1;
+		n = atoi(argv[1]) * atoi(argv[2]);
+		printf("%i\n", n);
 	}
-	return (res);
+	return (ex);
 }
